@@ -2,15 +2,34 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    void Start()
-    {
-        var results = Random.Range(1, 7);
-        Debug.Log(results);
-    }
+    public GameObject _prefabDice;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
         
     }
+
+    private void InitializeDice()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            var die = new Dice(6);
+
+            var result = die.RollDice();
+
+            GameObject obj = Instantiate(_prefabDice);
+            obj.transform.position = new Vector3(0, 0, 0);
+
+            Debug.Log(result);
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            InitializeDice();
+        }
+    }
+
 }
