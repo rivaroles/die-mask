@@ -1,4 +1,5 @@
 using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -10,16 +11,18 @@ public class GameManager : MonoBehaviour
     public GameObject dado4;
     public GameObject dado5;
 
-    void Update()
+    private int score;
+    public TextMeshProUGUI scoreText;
+
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log(mainDice.diceValue);
-        }
-        else if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("This dice is locked");
-        }
+        UpdateScore(0);
+        
     }
 
+    public void UpdateScore(int scoreToAdd)
+    {
+        score += scoreToAdd;
+        scoreText.text = "Score: " + score;
+    }
 }

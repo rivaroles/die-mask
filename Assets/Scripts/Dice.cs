@@ -11,6 +11,8 @@ public class Dice : MonoBehaviour
     private Vector3 initPosition;
     private Transform myDice;
 
+    private GameManager gameManager;
+
     public int diceValue;
     public int rollResult;
 
@@ -20,6 +22,7 @@ public class Dice : MonoBehaviour
         initPosition = transform.position;
         _rigidBody.useGravity = false;
         myDice = this.transform;
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private void Update()
@@ -42,6 +45,7 @@ public class Dice : MonoBehaviour
             case 1:
                 myDice.localRotation = Quaternion.Euler(180, 0, 0);
                 rollResult = 1;
+                //gameManager.UpdateScore(rollResult);
                 break;
             case 2:
                 myDice.localRotation = Quaternion.Euler(90, 0, 0);
@@ -76,6 +80,5 @@ public class Dice : MonoBehaviour
         this.transform.position = initPosition;
         _rigidBody.useGravity = false;
     }
-
 
 }
