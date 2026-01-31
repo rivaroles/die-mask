@@ -1,20 +1,24 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
+    
 public class Dice : MonoBehaviour
 {
-    private Rigidbody rigidbody;
+    private Rigidbody _rigidBody;
     private Vector3 initPosition;
     private Transform myDice;
 
+    public int diceValue;
+    public int rollResult;
 
     private void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        _rigidBody = GetComponent<Rigidbody>();
         initPosition = transform.position;
-        rigidbody.useGravity = false;
+        _rigidBody.useGravity = false;
         myDice = this.transform;
     }
 
@@ -30,46 +34,48 @@ public class Dice : MonoBehaviour
         }
     }
 
-    /*public Dice(int numberOfSides)
+    public void RollDice()
     {
-        _numberOfSides = numberOfSides;
-    }*/
-
-    private void RollDice()
-    {
-        int diceValue = UnityEngine.Random.Range(1, 7);
-        Debug.Log(diceValue);
+        diceValue = UnityEngine.Random.Range(1, 7);
         switch (diceValue)
         {
             case 1:
                 myDice.localRotation = Quaternion.Euler(180, 0, 0);
+                rollResult = 1;
                 break;
             case 2:
-                myDice.localRotation = Quaternion.Euler(-90, 0, 0);
+                myDice.localRotation = Quaternion.Euler(90, 0, 0);
+                rollResult = 2;
                 break;
             case 3:
-                myDice.localRotation = Quaternion.Euler(0, 0, 0);
+                myDice.localRotation = Quaternion.Euler(0, 0, 90);
+                rollResult = 3;
                 break;
             case 4:
-                myDice.localRotation = Quaternion.Euler(90, 0, 0);
+                myDice.localRotation = Quaternion.Euler(0, 0, -90);
+                rollResult = 4;
                 break;
             case 5:
-                myDice.localRotation = Quaternion.Euler(0, 0, 90);
+                myDice.localRotation = Quaternion.Euler(-90, 0, 0);
+                rollResult = 5;
                 break;
             case 6:
-                myDice.localRotation = Quaternion.Euler(0, 0, -90);
+                myDice.localRotation = Quaternion.Euler(0, 0, 0);
+                rollResult = 6;
                 break;
             default:
                 myDice.localRotation = Quaternion.Euler(45, 45, 45);
+                rollResult = 0;
                 break;
         }
-        rigidbody.useGravity = true;
+        _rigidBody.useGravity = true;
     }
 
     private void ResetDice()
     {
         this.transform.position = initPosition;
-        rigidbody.useGravity = false;
+        _rigidBody.useGravity = false;
     }
+
 
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5941909934747189353}
   - component: {fileID: 5544105602550760300}
   m_Layer: 0
-  m_Name: 3
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.005
   m_Center: {x: 0, y: 0, z: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 4588917705406921005}
   - component: {fileID: 7016014678598907313}
   m_Layer: 0
-  m_Name: 4
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.005
   m_Center: {x: 0, y: 0, z: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 3106858504067170245}
   - component: {fileID: 8755694174054910521}
   m_Layer: 0
-  m_Name: 1
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.005
   m_Center: {x: 0, y: 0, z: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 8258797369917942380}
   - component: {fileID: 7082139408282901217}
   m_Layer: 0
-  m_Name: 5
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,7 +208,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.005
   m_Center: {x: 0, y: 0, z: 0}
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 2795338110646619665}
   - component: {fileID: 8255554927459398060}
   m_Layer: 0
-  m_Name: 2
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,7 +261,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.005
   m_Center: {x: 0, y: 0, z: 0}
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 3740250110531659110}
   - component: {fileID: 38499537734049676}
   m_Layer: 0
-  m_Name: 6
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,7 +314,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.005
   m_Center: {x: 0, y: 0, z: 0}
@@ -391,22 +391,22 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a449e8a89543fef4a84c333c30773762, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3106858504067170245}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a449e8a89543fef4a84c333c30773762, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2795338110646619665}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a449e8a89543fef4a84c333c30773762, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5941909934747189353}
+      addedObject: {fileID: 3740250110531659110}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a449e8a89543fef4a84c333c30773762, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4588917705406921005}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a449e8a89543fef4a84c333c30773762, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 2795338110646619665}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a449e8a89543fef4a84c333c30773762, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 8258797369917942380}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a449e8a89543fef4a84c333c30773762, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3740250110531659110}
+      addedObject: {fileID: 5941909934747189353}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a449e8a89543fef4a84c333c30773762, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3106858504067170245}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a449e8a89543fef4a84c333c30773762, type: 3}
       insertIndex: -1
@@ -506,3 +506,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d378ab3b04a2fe46a9bb166a682d54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diceValue: 0
+  rollResult: 0

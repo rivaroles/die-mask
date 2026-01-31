@@ -1,38 +1,25 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject _prefabDice;
-    public Vector3 _instantiatePosition;
-    public GameObject _instantiator;
-    public int _result;
+    public Dice mainDice;
+    public GameObject dado1;
+    public GameObject dado2;
+    public GameObject dado3;
+    public GameObject dado4;
+    public GameObject dado5;
 
-    void Start()
+    void Update()
     {
-        _instantiatePosition.Equals(_instantiator.transform.localPosition);
-
-    }
-
-    /*public void InitializeDice()
-    {
-        for (int i = 0; i < 5; i++)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            var die = new Dice(6);
-
-            _result = die.RollDice();
-
-            Debug.Log(_result);
+            Debug.Log(mainDice.diceValue);
+        }
+        else if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("This dice is locked");
         }
     }
-
-    private void Update()
-    {
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            //InitializeDice();
-            //RollCheck();
-        }
-    }*/
 
 }
